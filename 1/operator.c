@@ -1,20 +1,15 @@
 #include <stdio.h>
 
 int main() {
-     int a ;
-     scanf("%d", &a);
-     int b;    
-     scanf("%d", &b);
+    
+     int a, b;
+     printf("Enter the value of 1st number: \n");
+     scanf("%d" , &a);
+     printf("Enter the value of 2nd number: \n");
+     scanf("%d" , &b);
+     
 
-     printf ("Sum is %d\n", a + b);
-     printf ("Difference is %d\n", a - b);   
-     printf ("Product is %d\n", a * b);
-     printf ("Quotient is %d\n", a / b);
-     printf ("Remainder is %d\n", a % b);
-      
-     printf("Maths using operators");
-
-
+     printf("sum is %d,\n difference is %d, \n product is %d,\n quotient is %d\n", a + b, a - b, a * b, a / b);
     
      return 0;
 }
