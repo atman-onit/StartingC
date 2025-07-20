@@ -4,7 +4,7 @@ int main() {
     //This code is to identify the hybrisation of molecules according to their steric number
 
     int steric;
-    printf("Enter steric number \n");
+    printf("Enter steric number: ");
     scanf("%d" , &steric);
 
     if(steric<2){
