@@ -34,9 +34,6 @@ int main() {
     else if(steric>6){
         printf("Hybridisation is complex");
     }
-
-
-
     
     return 0;
 }
