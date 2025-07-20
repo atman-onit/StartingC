@@ -37,3 +37,21 @@ int main() {
         
     return 0;
 }
+
+/*
+switch (variable) {
+    case int_1:
+        code
+        break;
+
+    case int_2:
+        code
+        break;
+        
+    case int_3
+        code
+        break;
+        .
+        .
+}
+*/ 
