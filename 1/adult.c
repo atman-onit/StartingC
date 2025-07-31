@@ -9,3 +9,4 @@ int main() {
     // condition?Code if true:code if false;
     return 0;
 }
+
