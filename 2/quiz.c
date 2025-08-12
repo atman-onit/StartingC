@@ -4,6 +4,11 @@
 
 int main() {
     int i = 0;
+/* 
+while (condition is true) {
+        loop function 
+    }   
+ */ 
 
     while (i<=20) {
         
