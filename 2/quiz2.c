@@ -1,11 +1,17 @@
-//program to calculate sum of numbers occuring in multiplication table of 8 consider from 8x1  to 8x10
+//program to calculate sum of first N natural numbers.
 #include <stdio.h>
 
 int main() {
-    int a, b=8, c;
-    for (a=1;a<=10;a++){
-        printf("%d \n" , c = a * b);
+    int n, sum=0;
+    printf("Program to sum first N natural numbers; Enter N: ");
+    scanf("%d", &n);
+    
+    for (int i=1;i<=n;i++) {
+        sum = sum + i;
+    }
+    printf("%d", sum);
+
         
-    } 
+    
     return 0;
 }
