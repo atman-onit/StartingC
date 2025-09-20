@@ -5,6 +5,7 @@
 int main() {
    int a = 75;
    int* a_p = &a; //pointer is a pointer pointing to address of a;
+   //&a = address of a
    printf("address of a is %p\n" , a_p);
    //or
    printf("Address of a is %p\n" , &a);
@@ -12,7 +13,7 @@ int main() {
    //%p is used to print pointer in hexadecimal
    
    int k = 99;
-   int* k_p = &k;
+   int* k_p = &k; //int* signifies that its an integer pointer.
    printf("address of k is %u\n" , k_p);
    printf("Address of k is %u\n" , &k);
     printf("Address of k is %p\n" , &k);
