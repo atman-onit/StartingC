@@ -9,9 +9,9 @@ int main() {
 
         printf("value of a is %d\n", a);
         printf("value of a is %d\n", *(p_a));
-        printf("address of a is p_a = %p\n" , (void*)p_a);
-        printf("address of pointer of a is p_p_a = %p\n" , (void*)p_p_a);
-        printf("address of pointer of p_p_a is p_p_p_a = %p\n" , (void*)p_p_p_a);
+        printf("address of a is p_a = %p\n" , p_a);
+        printf("address of pointer of a is p_p_a = %p\n" , p_p_a);
+        printf("address of pointer of p_p_a is p_p_p_a = %p\n" , p_p_p_a);
 
     
     return 0;
