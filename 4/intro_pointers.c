@@ -17,6 +17,9 @@ int main() {
    printf("Address of k is %u\n" , &k);
     printf("Address of k is %p\n" , &k);
    //%u is used to print pointer in decimal form.
+   //& operator (address of)
+   //* operator (value at address)
+   
    
 
 
