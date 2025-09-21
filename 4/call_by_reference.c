@@ -10,7 +10,7 @@ int main() {
     int* p_a = &a;
     printf("the value of a is %d" , swap(p_a));
     
-
+//value does change to 2
     
     return 0;
 }

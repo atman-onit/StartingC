@@ -18,6 +18,8 @@ int main() {
     printf("value of a is %d\n" , *(&a));
     //similarly
     printf("address of a is %p\n" , &(*(&a)) );
+    // *(&variable) = *(pointer_of_variable) = variable 
+    // &(*(pointer)) = &(value_of_pointer) = pointer
     return 0;
     
 }
