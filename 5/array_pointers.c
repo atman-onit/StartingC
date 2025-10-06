@@ -16,7 +16,7 @@ int main() {
     }
 
     //resetting
-    arr_p = arr;
+    arr_p = arr; //is the same as arr_p = &arr
     arr_p++;
 
     //after incrementing
@@ -26,7 +26,5 @@ int main() {
 
     printf("All the elements shifted to the next block; i.e. the address incremented by 1 block=4byte here");
 
-
-    
     return 0;
 }
