@@ -1,4 +1,4 @@
-//string is an array of characters.
+//string is an array of characters terminated by a null character..
 
 #include <stdio.h>
 
@@ -13,7 +13,7 @@ void revstr (char str[],int size){
 }
 
 int main() {
-    char str[5] = {'s','t','a','r','t'};
+    char str[5] = {'s','t','a','r','t','\0'};
     int size=5;
     printf ("String is:-\n ");
     for(int i=0;i<5;i++){
