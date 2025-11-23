@@ -1,1 +1,2 @@
-helloThis line is written from control in writing mode
+DUPLICATING....
+This line is written from control in writing mode
