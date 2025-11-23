@@ -25,7 +25,7 @@ int main() {
     print_vector(v1);
 
     vec* v1_p = &v1;
-    printf("nulling vector ... \n");
+    printf("nulling vector ... ");
     null_vec(v1_p);
     print_vector(v1);
 

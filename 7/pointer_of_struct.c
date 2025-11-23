@@ -23,8 +23,8 @@ int main() {
     printf("s1 is: %d, %d, %d\n", s1.x,s1.y,s1.z);
     printf("s1 is: %d, %d, %d\n", s2.x,s2.y,s2.z);
 
-    struct dimensions* ptr1 = &s1; //declairing pointer to structure-dimensions
-    struct dimensions* ptr2 = &s2;//2nd pointer entering to s1
+    struct dimensions* ptr1 = &s1; //declairing pointer to structure-dimensions' s1
+    struct dimensions* ptr2 = &s2;
 
     int s1_x = (*ptr1).x; //value of pointer = s1 
     int s2_x = (*ptr2).x;
