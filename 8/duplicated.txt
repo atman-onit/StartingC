@@ -1,0 +1,1 @@
+helloThis line is written from control in writing mode

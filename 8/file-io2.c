@@ -15,6 +15,8 @@ int main(){
         printf("%d\n", num);
         fscanf(ptr, "%d", &num); // scanning 2st int from ptr (file pointer)
         printf("%d", num);
+
+        fclose(ptr); //always close a file after opening it once reading is done
     }
 
     return 0;

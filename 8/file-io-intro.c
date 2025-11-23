@@ -8,6 +8,6 @@ int main() {
     printf("%d\n", num);
     fscanf(ptr,"%d", &num); //scanning 2st int from ptr (file pointer)
     printf("%d", num);
-
+    fclose(ptr);
     return 0;
 }
