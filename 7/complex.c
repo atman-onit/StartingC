@@ -12,7 +12,7 @@ int main() {
     printf("Enter imaginary part: ");
     scanf("%f" , &z1.imaginary);
 
-    printf("Number is: %f + %fi", z1.real , z1.imaginary);
+    printf("Number is= %f + %fi", z1.real , z1.imaginary);
     
 
 
