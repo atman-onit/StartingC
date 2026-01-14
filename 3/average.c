@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-float average(int,int,int);
-float average(int a, int b, int c){
-    printf("Their average is %f" , (a+b+c)/3);
+int average(int,int,int);
+int average(int a, int b, int c){
+    printf("Their average is %d" , (a+b+c)/3);
 }
 int main() {
-    float a,b,c;
+    int a,b,c;
 
     printf("Enter Number 1:");
-    scanf("%f",&a);
+    scanf("%d",&a);
 
     printf("Enter Number 2:");
-    scanf("%f",&b);
+    scanf("%d",&b);
 
     printf("Enter Number 3:");
-    scanf("%f",&c);
+    scanf("%d",&c);
 
     average(a, b, c);
 
