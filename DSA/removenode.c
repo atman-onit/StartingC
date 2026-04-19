@@ -25,6 +25,15 @@ int elementscounter(node* start){
     }
     return i;
 }
+
+node* removeend(node* start){
+    node *ptr = start;
+    while(ptr->next->next!=NULL){
+        ptr = ptr->next;
+    }
+    ptr->next = NULL;
+
+}
 int main() {
         node n1,n2,n3,n4;
         node* start = &n1;
@@ -44,16 +53,11 @@ int main() {
         printlist(start);
         printf("\nno. of elements is %d\n", elementscounter(start));
 
-        //to delete note from end
-        node* curr = start;
-        node* prev = curr;
-        while(curr->next!=NULL){
-            prev = curr;
-            curr = curr->next;
-        }
-        prev->next = NULL;
-        
+        removeend(start);
         printlist(start);
+
+
+
         
         
         

@@ -24,7 +24,26 @@ void printlist (node* start){
         }
 
 }
-
+node* addnode_pos_withvalue(node* start, int pos, int value){
+    //to add node at position n 
+    node new_node;
+    node* ptr = start;
+    if(pos==0){
+        new_node.next = start;
+        new_node.data = value;
+        start = &new_node;
+    }
+    else{
+    for(int i=0;i<pos-1 && ptr!=NULL;i++){
+    ptr = ptr->next;
+    }
+    
+    new_node.data = value;
+    new_node.next = ptr->next;
+    ptr->next = &new_node;
+    }
+    return start;
+}
 int main() {
     node n1,n2,n3;
 
@@ -39,13 +58,6 @@ int main() {
 
     printf("%d elements\n", list_counter(start));
     printlist(start);
-    
-
-    //to add node at position n 
-    node new_node;
-    node* ptr = start;
-
-
     int pos;
     printf("Enter position for new node: ");
     scanf("%d", &pos);
@@ -53,24 +65,8 @@ int main() {
     int value;
     printf("Enter value for new node: ");
     scanf("%d", &value);
-
-    if(pos==0){
-        new_node.next = start;
-        new_node.data = value;
-        start = &new_node;
-    }
-    else{
-    for(int i=0;i<pos-1 && ptr!=NULL;i++){
-    ptr = ptr->next;
-
-    }
+    addnode_pos_withvalue(start, pos, value);
     
-    new_node.data = value;
-    new_node.next = ptr->next;
-    ptr->next = &new_node;
-    }
-    
-
     printf("%d elements\n", list_counter(start));
     printlist(start);
     
