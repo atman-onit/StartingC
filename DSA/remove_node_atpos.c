@@ -1,0 +1,71 @@
+//linked list is a data structure which is dynamic
+
+#include <stdio.h>
+
+typedef struct node {
+    int value;
+    struct node* next;
+} node;
+
+void printlist (node* start){
+    int i=0;
+    node* ptr = start;
+        while (ptr!=NULL){
+            printf("Node %d Value: %d\n" , i, ptr->value);
+            ptr = ptr->next;
+            i++;
+        }
+}
+int elementscounter(node* start){
+    int i=0;
+    node* ptr = start;
+    while(ptr!=NULL){
+        ptr = ptr->next;
+        i++;
+    }
+    return i;
+}
+int main() {
+        node n1,n2,n3,n4;
+        node* start = &n1;
+
+        n1.value = 0;
+        n1.next = &n2;
+
+        n2.value = 1;
+        n2.next = &n3;
+
+        n3.value=2;
+        n3.next=&n4;
+
+        n4.value=9;
+        n4.next=NULL;
+
+        printlist(start);
+        printf("\nno. of elements is %d", elementscounter(start));
+
+        node* preptr = start;
+        node* ptr = start;
+
+
+        int pos;
+        printf("enter node to remove: ");
+        scanf("%d",&pos);
+
+        if(pos==0){
+            start = start->next;
+        }
+        else{
+            for(int i=0;i<pos && ptr!=NULL;i++){
+                preptr = ptr;
+                ptr = ptr->next;
+            }
+            preptr->next = ptr->next;
+            free(ptr);
+
+        }
+        printlist(start);
+    
+        
+    return 0;
+}
